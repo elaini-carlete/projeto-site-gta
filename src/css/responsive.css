@@ -1,0 +1,116 @@
+@media(max-width: 1024px){
+    .cabecalho .menu{
+        display: none;
+    }
+
+    .cabecalho .logo{
+        z-index: 3;
+    }
+
+    .cabecalho .menu.ativo li a{
+        padding: 10px;
+        cursor: pointer;  
+    }
+    
+    .cabecalho .menu.ativo li a:hover{
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-hamburguer{
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: 30px;
+    }
+
+    .cabecalho .menu.ativo{
+        display: flex;
+        flex-direction: column;
+        background-color: #0b0b0b;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 30px;
+        z-index: 2;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    .cabecalho .menu.ativo .menu-close{
+        cursor: pointer;
+        display: block;
+        max-width: 24px;
+        align-self: flex-end;
+    }
+
+    .home .informacoes{
+        padding: 30px;
+    }
+
+    .home .informacoes img{
+        max-width: 120px;
+    }
+
+    .home .informacoes .titulo{
+        font-size: 40px;
+    }
+
+    .compre-ja .titulo{
+        font-size: 40px;
+    }
+
+    .compre-ja .cartao{
+        width: 70%;
+    }
+}
+
+@media(max-width: 768px){
+    .cabecalho{
+        padding: 0px 20px;
+    }
+
+    .cabecalho .logo .logo-gta{
+        width: 170px;
+    }
+
+    .btn-comprar, .btn-plataforma{
+        width: 60%;
+    }
+
+    .compre-ja{
+        padding: 30px;
+    }
+
+    .compre-ja .cartao{
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .compre-ja .informacoes .plataformas{
+        flex-direction: column;
+    }
+
+    .btn-comprar{
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px){
+    .home::after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .4) 100%, transparent 65%);
+    }
+
+    .home .informacoes .lista-de-jogos{
+        flex-direction: column;
+    }
+
+    .compre-ja .cartao .capa-do-jogo{
+        max-width: 80%;
+    }
+
+    .compre-ja .btn-plataforma .plataformas.ativo li img{
+        max-width: 80px;
+    }
+}
